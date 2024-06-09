@@ -10,7 +10,7 @@ export class UserServiceService {
   serviceUrl : string;
 
   constructor(private http: HttpClient) { 
-    this.serviceUrl = "http://localhost:8080/users/";
+    this.serviceUrl = "https://e-commerce-backend-production-1d63.up.railway.app/users/";
   }
 
   addUser(user: User){

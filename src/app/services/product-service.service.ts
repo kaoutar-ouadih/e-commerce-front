@@ -10,7 +10,8 @@ export class ProductServiceService {
   serviceUrl : string;
 
   constructor(private http : HttpClient) { 
-    this.serviceUrl = "http://localhost:8080/products/";
+    // http://localhost:8080/products/
+    this.serviceUrl = "https://e-commerce-backend-production-1d63.up.railway.app/products/";
   }
   
   getAllProducts(): Observable<Product[]>{
