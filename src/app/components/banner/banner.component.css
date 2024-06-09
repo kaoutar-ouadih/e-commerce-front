@@ -1,0 +1,50 @@
+.banner-section{
+    padding: 4rem 6rem 3rem;
+}
+.banner-container{
+    background-color: var(--light-beige-bg);
+    border-radius: 20px;
+    display: flex;
+    overflow: hidden;
+}
+.banner-informations{
+    padding-top: 4em;
+    padding-left: 5em;
+}
+p{
+    color: var(--dark-grey);
+    margin-bottom: 0.7em;
+}
+h2{
+    font-weight: 600;
+    font-size: 1.9rem;
+    margin-bottom: 0.5em;
+    line-height: 40px;
+}
+button{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1em 2.5em;
+    border-radius: 40px;
+    margin-top: 0.9em;
+    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2);
+}
+img{
+    height: 350px;
+    object-fit: cover;
+}
+@media(max-width:960px){
+    .banner-section{
+        padding: 4rem 2rem 3rem;
+    }
+    .banner-container{
+        flex-direction: column;
+        overflow: hidden;
+    }
+    .banner-informations{
+       order: 1;
+        padding-top: 2em;
+        padding-left: 2em;
+        padding-bottom: 2em;
+    }
+}

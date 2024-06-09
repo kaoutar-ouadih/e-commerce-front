@@ -1,1 +1,46 @@
 /* You can add global styles to this file, and also import other style files */
+:root{
+    --dark-blue: #111827;
+    --white: #FFF;
+    --dark-grey: #4B5563;
+    --very-dark-grey: #3D3D3D;
+    --light-grey-links: #A8A8A8;
+    --light-grey-border: #E5E7EB;
+    --light-blue: #0EA5E9;
+    --very-light-grey: #F3F4F6;
+    --black: #000;
+    --very-light-blue: #A1DDFF;
+    --very-light-purple: #E1A1FF;
+    --very-light-orange: #FFCEA1;
+    --light-beige-bg: #F5F5F5;
+    --red: red;
+}
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+button{
+    border: none;
+    outline: none;
+}
+button:hover{
+    cursor: pointer;
+}
+body{
+    font-family: "Poppins", sans-serif;
+    position: relative;
+    height: 100vh;
+}

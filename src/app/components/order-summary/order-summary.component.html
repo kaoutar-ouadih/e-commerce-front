@@ -1,0 +1,60 @@
+<div class="sidebar">
+    <div class="order-summary">
+        <h3>Order summary</h3>
+        <div class="cart-items">
+            <div class="cart-item" *ngFor="let cartItem of cartItems">
+                <div class="item-image">
+                    <img src="{{cartItem.item.imageUrl}}" alt="">
+                </div>
+                <div class="item-details">
+                    <div class="details">
+                        <div class="item-info">
+                            <h5>{{cartItem.item.name}}</h5>
+                            <div class="size">
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.25 5.25V1.75H8.75" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/><path d="M1.75 8.75V12.25H5.25" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.25 1.75L7.875 6.125" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/><path d="M6.125 7.875L1.75 12.25" stroke="#475569" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                                <p>One size</p>    
+                            </div>
+                        </div>
+                        <div class="quantity">
+                            <button class="quantity-btn" (click)="decrementQuantity(cartItem.item, cartItem.quantity)">
+                                <svg width="10" height="2" viewBox="0 0 10 2" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M0 1C0 0.867392 0.0478894 0.740215 0.133133 0.646447C0.218377 0.552679 0.333993 0.5 0.454545 0.5H9.54545C9.66601 0.5 9.78162 0.552679 9.86687 0.646447C9.95211 0.740215 10 0.867392 10 1C10 1.13261 9.95211 1.25978 9.86687 1.35355C9.78162 1.44732 9.66601 1.5 9.54545 1.5H0.454545C0.333993 1.5 0.218377 1.44732 0.133133 1.35355C0.0478894 1.25978 0 1.13261 0 1Z" fill="#111827"/></svg>
+                            </button>
+                            <p><span>{{cartItem.quantity}}</span></p>     
+                            
+                            <button class="quantity-btn" (click)="incrementQuantity(cartItem.item, cartItem.quantity)">
+                                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M5 0C5.12055 0 5.23617 0.0478894 5.32141 0.133133C5.40666 0.218377 5.45455 0.333993 5.45455 0.454545V4.54545H9.54545C9.66601 4.54545 9.78162 4.59334 9.86687 4.67859C9.95211 4.76383 10 4.87945 10 5C10 5.12055 9.95211 5.23617 9.86687 5.32141C9.78162 5.40666 9.66601 5.45455 9.54545 5.45455H5.45455V9.54545C5.45455 9.66601 5.40666 9.78162 5.32141 9.86687C5.23617 9.95211 5.12055 10 5 10C4.87945 10 4.76383 9.95211 4.67859 9.86687C4.59334 9.78162 4.54545 9.66601 4.54545 9.54545V5.45455H0.454545C0.333993 5.45455 0.218377 5.40666 0.133133 5.32141C0.0478894 5.23617 0 5.12055 0 5C0 4.87945 0.0478894 4.76383 0.133133 4.67859C0.218377 4.59334 0.333993 4.54545 0.454545 4.54545H4.54545V0.454545C4.54545 0.333993 4.59334 0.218377 4.67859 0.133133C4.76383 0.0478894 4.87945 0 5 0Z" fill="#111827"/></svg>
+                            </button> 
+                        </div>
+                    </div>
+                    <div class="price">
+                        <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0 0 24 24" (click)="deleteFromCart(cartItem.item.id)"><path d="M 4.7070312 3.2929688 L 3.2929688 4.7070312 L 10.585938 12 L 3.2929688 19.292969 L 4.7070312 20.707031 L 12 13.414062 L 19.292969 20.707031 L 20.707031 19.292969 L 13.414062 12 L 20.707031 4.7070312 L 19.292969 3.2929688 L 12 10.585938 L 4.7070312 3.2929688 z"></path></svg>
+                        <h5>{{cartItem.item.currentPrice | currency}}</h5>
+                        <p>{{cartItem.item.currentPrice * cartItem.quantity | currency}}</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="order-total">
+        <div class="order-subtotal">
+            <div class="subtotal">
+                <p>Subtotal</p>
+                <p>{{getSubTotal() | currency}}</p>
+            </div>
+            <div class="shipping">
+                <p>Shipping estimate</p>
+                <p>{{shippingEstimate | currency}}</p>
+            </div>
+            <div class="tax">
+                <p>Tax estimate</p>
+                <p>{{taxEstimate | currency}}</p>
+            </div>
+        </div>
+        <div class="total">
+            <h5>Order total</h5>
+            <h5>{{getTotal() | currency}}</h5>
+        </div>
+    </div>
+    <button class="confirm-btn" (click)="onConfirmBtnClick()">Confirm order</button>
+</div>

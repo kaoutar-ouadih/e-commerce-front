@@ -1,0 +1,125 @@
+.recommendation-section{
+    padding: 4rem 6rem;
+}
+span{
+    color: var(--dark-grey);
+}
+h2{
+    font-weight: 600;
+    font-size: 1.9rem;
+}
+.products{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 1.7em 0;
+}
+.product-card{
+    flex: 1;
+    position: relative;
+    min-width: 220px;
+}
+.product-card:last-child, .product-card:nth-last-child(2){
+    max-width: 32%;
+}
+.product-card img{
+    border-radius: 10px;
+    margin-bottom: 0.9em;
+    /* height: 310px; */
+}
+.product-info{
+    display: flex;
+    justify-content: space-between;
+}
+h5{
+    color: var(--dark-blue);
+    margin-bottom: 0.1em;
+}
+p{
+    font-size: 0.83rem;
+    color: var(--dark-grey);
+    margin-bottom: 0.7em;
+}
+.rating{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.8rem;
+}
+.old-price{
+    text-decoration: line-through;
+}
+button{
+    background-color: var(--white);
+}
+.tag{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    border-radius: 15px;
+    color: var(--dark-grey);
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    padding: 0.6em 1em;
+    font-size: 0.6rem;
+    font-weight: 500;
+}
+.cart-btn{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    border-radius: 50%;
+    padding: 0.4em 0.6em;
+}
+.slider-nav{
+    display: none;
+}
+@media(max-width:960px) and (min-width:768px){
+    .recommendation-section{
+        padding: 3rem 2rem;
+    }
+}
+@media(max-width:768px) and (min-width:560px){
+    .recommendation-section{
+        padding: 3rem 2rem;
+    }
+    .product-card:last-child, .product-card:nth-last-child(2){
+        max-width: unset;
+    }
+}
+@media(max-width:560px){
+    .recommendation-section{
+        padding: 3rem 2rem;
+    }
+    .products{
+       flex-wrap: nowrap;
+       overflow-x: hidden; 
+       scroll-behavior: smooth;
+       scroll-snap-type: mandatory;/* learn more about this*/
+    }
+    .product-card{
+        flex: 1 0 100%;
+        min-width: unset;
+        max-width: unset;
+    }
+    .product-card:last-child, .product-card:nth-last-child(2){
+        max-width: unset;
+    }
+    .slider-nav{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+    }
+    .slider-nav svg{
+        cursor: pointer;
+    }
+    .slider-nav svg:hover rect{
+        fill: var(--dark-blue);
+        fill-opacity: 1;
+    }
+    /* .product-card img{
+        height: 395px;
+    } */
+}
+

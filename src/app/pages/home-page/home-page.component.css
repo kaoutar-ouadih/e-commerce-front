@@ -1,0 +1,42 @@
+main{
+    background-image: url(../../../assets/hero-bg.png);
+    height: fit-content;
+    padding: 8rem 6rem;
+    background-size: cover;
+    background-position: top right;
+}
+#main-p{
+    color: var(--dark-grey);
+    margin-bottom: 1.1em;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 600;
+    line-height: 80px;
+    color: var(--dark-blue);
+}
+button{
+    background-color: var(--dark-blue);
+    color: var(--white);
+    padding: 1.2em 2em;
+    border-radius: 40px;
+    margin-top: 1em;
+}
+a{
+    display: flex;
+    align-items: center;
+}
+.hero-slider-items{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    top: 110px;
+    gap: 10px;
+}
+
+@media(max-width:960px){
+    main{
+        background-image: unset;
+        padding: 2rem 2rem 8rem;
+    }
+}

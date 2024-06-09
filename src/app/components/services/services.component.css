@@ -1,0 +1,35 @@
+.brand-info{
+    padding: 2rem 6rem;
+}
+.brand-info-content{
+    border: 1px solid var(--light-grey-border);
+    display: flex;
+    border-radius: 15px;
+    padding: 0.5em 1.5em;
+    align-items: center;
+    gap: 20px;
+}
+.brand-info-content-details{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    gap: 13px;
+}
+.brand-info-content-details:not(:last-child){
+    border-right: 1px solid var(--light-grey-border);
+}
+p{
+    font-size: 0.83rem;
+    color: var(--dark-grey);
+}
+
+@media(max-width:960px){
+    .brand-info{
+        padding: 2rem 2rem 1em;
+        margin-top: 2em
+    }
+    .brand-info-content{
+        flex-wrap: wrap;
+        padding: 1em 1.5em;
+    }
+}

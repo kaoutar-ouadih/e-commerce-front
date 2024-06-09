@@ -1,0 +1,40 @@
+main{
+    padding: 2rem 6rem;
+}
+.page-content{
+    display: flex;
+    gap: 35px;
+}
+.page-content div{
+    flex: 1;
+}
+h2{
+    font-size: 2.25rem;
+    font-weight: 550;
+}
+p{
+    color: var(--dark-grey);
+    font-size: 0.9rem;
+    margin-bottom: 2.3em;
+}
+@media(max-width:1090px) and (min-width: 760px){
+    .page-content{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    .order-summary{
+        order: -1;
+    }
+}
+@media(max-width:760px){
+    main{
+        padding: 2rem 2rem;
+    }
+    .page-content{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+    .order-summary{
+        order: -1;
+    }
+}

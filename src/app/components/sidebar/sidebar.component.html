@@ -1,0 +1,100 @@
+<div class="sidebar-section">
+    <div class="categories">
+        <h3>Categories</h3>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(menCategory, 'men\'s fashion')" id="men-category" #menCategory> <label for="men-category">Men’s fashion</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(womenCategory, 'women\'s fashion')" id="women-category" #womenCategory> <label for="women-category">Women’s fashion</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(kidAndToysCategory, 'kid and toys')" id="kidsAndtoys-category" #kidAndToysCategory> <label for="kidsAndtoys-category">Kids & Toys</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(accessoriesCategory, 'accessories')" id="accessories-category" #accessoriesCategory> <label for="accessories-category">Accessories</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(cosmeticsCategory, 'cosmetics')" id="cosmetics-category" #cosmeticsCategory> <label for="cosmetics-category">Cosmetics</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(shoesCategory, 'shoes')" id="shoes-category" #shoesCategory> <label for="shoes-category">Shoes</label>
+        </div>
+        <div class="category">
+            <input type="checkbox" (change)="updateCategory(sportCategory, 'sport')" id="sport-category" #sportCategory> <label for="sport-category">Sports</label>
+        </div>
+    </div>
+    <div class="price">
+        <h3>Price range</h3>
+        <div class="slider">
+            <div class="progress" #progress></div>
+        </div>
+        <div class="range-inputs">
+            <input type="range" class="min-range" min="0" max="5000" value="0" step="100" (input)="changeRange(minRangeInput, maxRangeInput, progress, $event, maxPriceInput, minPriceInput)" #minRangeInput>
+            <input type="range" class="max-range" min="0" max="5000" value="5000" step="100" (input)="changeRange(minRangeInput, maxRangeInput, progress, $event, maxPriceInput, minPriceInput)" #maxRangeInput>
+        </div>
+        <div class="price-inputs">
+            <div class="price-input">
+                <label for="min-price">Min price</label>
+                <input type="text" name="min-price" id="min-price" value="0" (input)="changePrice(minPriceInput, maxPriceInput, minRangeInput, maxRangeInput, progress, $event)" #minPriceInput>
+                <span>$</span>
+            </div>
+            <div class="price-input">
+                <label for="max-price">Max price</label>
+                <input type="text" value="5000" id="max-price" name="max-price" (input)="changePrice(minPriceInput, maxPriceInput, minRangeInput, maxRangeInput, progress, $event)" #maxPriceInput>
+                <span>$</span>
+            </div>
+        </div>
+    </div>
+    <div class="sorting">
+        <h3>Sort order</h3>
+        <div class="sort-critere">
+            <input type="radio" name="sorting-parameter" (click)="updateSortingParameters(priceAsc, 'currentPrice', 'asc')" id="price-asc"  #priceAsc><label for="price-asc">Price Low - Hight</label>
+        </div>
+        <div class="sort-critere">
+            <input type="radio" name="sorting-parameter" id="price-desc" (click)="updateSortingParameters(priceDesc, 'currentPrice', 'desc')" #priceDesc><label for="price-desc">Price Hight - Low </label>
+        </div>
+        <div class="sort-critere">
+            <input type="radio" name="sorting-parameter" id="best-rating" (click)="updateSortingParameters(bestRating, 'rating')" #bestRating><label for="best-rating">Best Rating</label>
+        </div>
+        <div class="sort-critere">
+            <input type="radio" name="sorting-parameter" id="most-popular"><label for="most-popular">Most Popular</label>
+        </div>
+        <div class="sort-critere">
+            <input type="radio" name="sorting-parameter" (click)="updateSortingParameters(newest, 'addedAt', 'asc')" id="newest" #newest><label for="newest">Newest</label>
+        </div>
+    </div>
+    <div class="sidebar-mobile">
+        <div class="filter-mobile-parent">
+            <button class="filter-btn" (click)="showFiltersForMobile(categoriesMobile)" >
+                <svg width="15" height="15" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_2033_4579)"><path d="M8.405 -7.16145e-05H3.26167C2.3825 -7.16145e-05 1.66667 0.715345 1.66667 1.59535C1.66667 2.02118 1.8325 2.4216 2.13375 2.72326L4.58333 5.17243V6.6666C4.58333 6.79785 4.645 6.92118 4.75 6.99993L6.41667 8.24993C6.49 8.30493 6.57833 8.33326 6.66667 8.33326C6.73 8.33326 6.79417 8.31868 6.85292 8.28951C6.99417 8.2191 7.08333 8.07451 7.08333 7.9166V5.17243L9.53292 2.72285C9.83417 2.4216 10 2.02076 10 1.59493C10 0.715345 9.28417 -0.000488281 8.405 -0.000488281V-7.16145e-05ZM8.94375 2.1341L6.37208 4.70535C6.29375 4.78368 6.25 4.88951 6.25 4.99993V7.08326L5.41667 6.45826V4.99993C5.41667 4.88951 5.37292 4.78326 5.29458 4.70535L2.72292 2.1341C2.57917 1.98993 2.5 1.79868 2.5 1.59535C2.5 1.17535 2.84167 0.833262 3.26167 0.833262H8.405C8.825 0.833262 9.16667 1.17493 9.16667 1.59535C9.16667 1.79868 9.0875 1.99035 8.94375 2.1341ZM5.41667 8.74993V9.58326C5.41667 9.74118 5.3275 9.88535 5.18625 9.95618C5.12708 9.98576 5.06333 9.99993 5 9.99993C4.91167 9.99993 4.82333 9.9716 4.75 9.9166L3.08333 8.6666C2.97833 8.58826 2.91667 8.46451 2.91667 8.33326V6.8391L0.467083 4.38993C0.165833 4.08826 0 3.68785 0 3.26201C0 2.79285 0.205417 2.34951 0.56375 2.04535C0.74 1.89618 1.0025 1.91785 1.15125 2.09326C1.3 2.26868 1.27875 2.5316 1.10333 2.68076C0.932083 2.82618 0.83375 3.03826 0.83375 3.26243C0.83375 3.46576 0.912917 3.65743 1.05667 3.80118L3.62833 6.37243C3.70667 6.45076 3.75042 6.5566 3.75042 6.66701V8.12535L4.58375 8.75035C4.58375 8.52035 4.77 8.33368 5.00042 8.33368C5.23083 8.33368 5.41708 8.52035 5.41708 8.75035L5.41667 8.74993Z" fill="#4B5563"/></g><defs><clipPath id="clip0_2033_4579"><rect width="10" height="10" fill="white"/></clipPath></defs></svg>      
+                <p>Filters</p>
+            </button>
+            <div class="categories-mobile" #categoriesMobile>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(menCategoryMobile, 'men\'s fashion')" id="men-category-mobile" #menCategoryMobile> <label for="men-category-mobile">Men’s fashion</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(womenCategoryMobile, 'women\'s fashion')" id="women-category-mobile" #womenCategoryMobile> <label for="women-category-mobile">Women’s fashion</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(kidAndToysCategoryMobile, 'kid and toys')" id="kidsAndtoys-category-mobile" #kidAndToysCategoryMobile> <label for="kidsAndtoys-category-mobile">Kids & Toys</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(accessoriesCategoryMobile, 'accessories')" id="accessories-category-mobile" #accessoriesCategoryMobile> <label for="accessories-category-mobile">Accessories</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(cosmeticsCategoryMobile, 'cosmetics')" id="cosmetics-category-mobile" #cosmeticsCategoryMobile> <label for="cosmetics-category-mobile">Cosmetics</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(shoesCategoryMobile, 'shoes')" id="shoes-category-mobile" #shoesCategoryMobile> <label for="shoes-category-mobile">Shoes</label>
+                </div>
+                <div class="category">
+                    <input type="checkbox" (change)="updateCategory(sportCategoryMobile, 'sport')" id="sport-category-mobile" #sportCategoryMobile> <label for="sport-category-mobile">Sports</label>
+                </div>
+            </div>
+        </div>
+        <button class="filter-btn">
+            <p>Rows per page</p>
+        </button>
+    </div>
+</div>

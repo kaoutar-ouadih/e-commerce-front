@@ -1,0 +1,125 @@
+nav{
+    background-color: var(--dark-blue);
+    display: flex;
+    color: white;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5em 6em;
+    color: var(--white);
+}
+nav h1{
+    font-weight: 600;
+    font-size: 2rem;
+}
+nav p{
+    margin-top: -13px;
+    float: right;
+    font-weight: 200;
+    font-size: 0.9rem;
+}
+.nav-search-section{
+    width: 38%;
+    position: relative;
+    min-width: 300px;
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    height: 45px;
+    padding-left: 51px;
+    color: var(--dark-grey);
+    width: 100%;
+}
+#search-svg{
+    position: absolute;
+    top: 12px;
+    left: 20px;
+}
+input::placeholder{
+    color: var(--dark-grey);
+}
+.nav-action-section{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+#user-svg:hover{
+    cursor: pointer;
+}
+#cart-svg:hover{
+    cursor: pointer;
+}
+/* for hamburger menu  */
+.nav-action-hamburger{
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: var(--dark-blue);
+    flex-direction: column;
+    align-items: center;
+    row-gap: 50px;
+    padding-top: 50px;
+    display: none;
+}
+#menu-btn{
+    display: none;
+}
+#logo-mobile{
+    display: none;
+}
+#menu-btn:hover{
+    cursor: pointer;
+}
+.nav-action-hamburger svg:hover{
+    cursor: pointer;
+}
+.cart-items-number{
+    color: var(--white);
+    background-color: var(--light-blue);
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -10px;
+    left: 15px;
+}
+.cart-svg-container{
+    position: relative;
+}
+#search-svg{
+    cursor: pointer;
+}
+
+@media(max-width:760px)and (min-width:620px){
+    nav{
+        padding: 1.5em 2em;
+    }
+}
+@media(max-width:620px){
+    nav{
+        padding: 1.5em 2em;
+    }
+    #menu-btn{
+        display: inline-block;
+    }
+    .hidden{
+        display: none;
+    }
+    #logo-mobile{
+        display: inline-block;
+    }
+    .nav-logo-section{
+        display: flex;
+        align-items: center;
+    }
+    .nav-search-section{
+        min-width: 210px;
+    }
+}

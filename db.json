@@ -1,0 +1,480 @@
+{
+    "products": [
+      {
+        "id" : "1",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product1.png",
+        "currentPrice" : 169.99,
+        "oldPrice" : 199.99,
+        "category" : {
+            "id": 1,
+            "name":"women's fashion"
+        },
+        "rating" : 4.9,
+        "size" : "M",
+        "addedAt": "2024-05-21",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white"],
+        "sales": 350
+      },
+      {
+        "id" : "2",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product2.png",
+        "currentPrice" : 179.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 1,
+          "name":"women's fashion"
+        },
+        "rating" : 4.8,
+        "size" : "M",
+        "addedAt": "2024-05-20",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black", "red"],
+        "sales": 70
+      },
+      {
+        "id" : "3",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product3.png",
+        "currentPrice" : 189.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 1,
+          "name":"women's fashion"
+        },
+        "rating" : 4.7,
+        "size" : "M",
+        "addedAt": "2024-05-19",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 80
+      },
+      {
+        "id" : "4",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product4.png",
+        "currentPrice" : 169.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 1,
+          "name":"women's fashion"
+        },
+        "rating" : 4.6,
+        "size" : "M",
+        "addedAt": "2024-05-18",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 90
+      },
+      {
+        "id" : "5",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product5.png",
+        "currentPrice" : 149.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 1,
+          "name":"women's fashion"
+        },
+        "rating" : 4.5,
+        "size" : "M",
+        "addedAt": "2024-05-17",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 80
+      },
+      {
+        "id" : "6",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product6.png",
+        "currentPrice" : 159.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 2,
+          "name":"sport"
+        },
+        "rating" : 4.4,
+        "size" : "M",
+        "addedAt": "2024-05-16",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 100
+      },
+      {
+        "id" : "7",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product7.png",
+        "currentPrice" : 109.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 1,
+          "name":"women's fashion"
+        },
+        "rating" : 4.3,
+        "size" : "M",
+        "addedAt": "2024-05-15",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 300
+      },
+      {
+        "id" : "8",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product8.png",
+        "currentPrice" : 119.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 3,
+          "name":"men's fashion"
+        },
+        "rating" : 4.2,
+        "size" : "M",
+        "addedAt": "2024-05-14",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 200
+      },
+      {
+        "id" : "9",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product9.png",
+        "currentPrice" : 129.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 4.1,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },   
+      {
+        "id" : "10",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product10.png",
+        "currentPrice" : 129.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 4.3,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      }
+      ,
+      {
+        "id" : "11",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product11.png",
+        "currentPrice" : 229.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.8,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "12",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product12.png",
+        "currentPrice" : 50.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.9,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "13",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product13.png",
+        "currentPrice" : 60.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.9,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "14",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product27.png",
+        "currentPrice" : 70.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 2.5,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "15",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product14.png",
+        "currentPrice" : 80.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.1,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "16",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product15.png",
+        "currentPrice" : 90.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 1.1,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "17",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product16.png",
+        "currentPrice" : 100.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 2.8,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "18",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product17.png",
+        "currentPrice" : 629.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 2.8,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "19",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product18.png",
+        "currentPrice" : 429.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 2.5,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "20",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product19.png",
+        "currentPrice" : 110.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.1,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "21",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product20.png",
+        "currentPrice" : 130.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.6,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "22",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product21.png",
+        "currentPrice" : 277.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.4,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "23",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product22.png",
+        "currentPrice" : 127.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.7,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "24",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product23.png",
+        "currentPrice" : 39.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 3.3,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      },
+      {
+        "id" : "25",
+        "name" : "white sweater",
+        "imageUrl" : "../../../assets/product24.png",
+        "currentPrice" : 10.99,
+        "oldPrice" : 199.99,
+        "category" : {
+          "id": 4,
+          "name": "accessories"
+        },
+        "rating" : 2.9,
+        "size" : "M",
+        "addedAt": "2024-05-13",
+        "description": "The St. Louis Meramec Canoe Company was founded by Alfred Wickett in 1922. Wickett had previously worked for the Old Town Canoe Co from 1900 to 1914. Manufacturing of the classic wooden canoes in Valley Park, Missouri ceased in 1978.",
+        "reviews": ["it's a great product", "it's very nice", "very comfortable", "very comfortable", "very comfortable"],
+        "Material": "Soft wool blend",
+        "colors": ["white", "black"],
+        "sales": 400
+      }
+    ]
+  }

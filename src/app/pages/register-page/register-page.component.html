@@ -1,0 +1,40 @@
+<div class="register-section">
+    <h1>Register</h1>
+    <form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm" novalidate>
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="example@example.com" id="email" name="email" [(ngModel)]="user.email" 
+            pattern="^([a-z\d\.\-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" required #email="ngModel">
+            <div *ngIf="email.invalid && (email.touched || email.dirty) ||  isSubmited">
+                <span *ngIf="email.errors?.required">Email is required</span>
+                <span *ngIf="email.errors?.pattern">Email must respect email format</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" minlength="7" required #password="ngModel">
+            <div *ngIf="password.invalid && (password.touched || password.dirty) ||  isSubmited">
+                <span *ngIf="password.errors?.required">Password is required</span>
+                <span *ngIf="password.errors?.minlength">Min 7 characters needed</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="confirmPassword">Password (Again)</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" [(ngModel)]="user.confirmPassword" #confirmPassword="ngModel" required>
+            <div *ngIf="confirmPassword.invalid && (confirmPassword.touched || confirmPassword.dirty) ||  isSubmited">
+                <span *ngIf="confirmPassword.errors?.required">this field is required</span>
+            </div>
+            <div *ngIf="!(confirmPassword.value==password.value) && (confirmPassword.touched || confirmPassword.dirty)">
+                <span>Passwords do not match! Please try again</span>
+            </div>
+        </div>
+        <button type="submit">Continue</button>
+    </form>
+    <div class="register-option">
+        <div class="line"></div>
+        <p>OR</p>
+        <div class="line"></div>
+    </div>
+    <p>Already a member? <a routerLink="/login">Login</a></p>
+</div>
+

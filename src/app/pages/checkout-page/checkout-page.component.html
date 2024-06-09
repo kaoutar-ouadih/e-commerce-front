@@ -1,0 +1,13 @@
+<main>
+    <h2>Checkout</h2>
+    <p>Homepage / Checkout</p>
+    <div class="page-content">
+        <div class="order-summary">
+            <app-order-summary (ConfirmBtnClicked)="onConfirBtnClick($event)"></app-order-summary> 
+         </div>
+        <div>
+            <app-checkout-form [isConfirmBtnClicked]="isConfirmBtnClicked"></app-checkout-form>
+        </div>
+    </div>
+</main>
+

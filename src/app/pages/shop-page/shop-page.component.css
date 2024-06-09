@@ -1,0 +1,30 @@
+.main-content{
+    display: flex;
+    padding: 2rem 6rem;
+    gap: 3em;
+    position: relative;
+}
+.products-container{
+    flex-grow: 1;
+}
+button{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: 1.5px solid var(--light-grey-border);
+    border-radius: 25px;
+    background-color: var(--white);
+    padding: 0.8em 1.5em;
+}
+p{
+    color: var(--dark-grey);
+    font-size: 1rem;
+}
+
+@media(max-width:900px){
+    .main-content{
+        flex-direction: column;
+        padding: 2rem 2rem;
+        row-gap: 3em;
+    }
+}

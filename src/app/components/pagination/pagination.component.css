@@ -1,0 +1,28 @@
+.pagination{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: flex-end;
+    position: absolute;
+    /* top: 1310px; */
+    bottom: 20px;
+    right: 6rem;
+    z-index: 3;
+}
+ul{
+    display: flex;
+    gap: 10px;
+    color: var(--dark-grey);
+}
+ul li {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.active{
+    background-color: var(--light-grey-border);
+    border-radius: 12px;
+}

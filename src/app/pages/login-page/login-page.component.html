@@ -1,0 +1,31 @@
+<div class="login-section">
+    <h1>Login</h1>
+    <form (ngSubmit)="onSumbit(myForm)" #myForm="ngForm">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" placeholder="example@example.com" id="email" name="email" [(ngModel)]="user.email" 
+            pattern="^([a-z\d\.\-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z]{2,8})?$" required #email="ngModel">
+            <div *ngIf="email.invalid && (email.touched || email.dirty) || isSubmited">
+                <span *ngIf="email.errors?.required">Email is required</span>
+                <span *ngIf="email.errors?.pattern">Email must respect email format</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" [(ngModel)]="user.password" minlength="7"
+            #password="ngModel" required>
+            <div *ngIf="password.invalid && (password.touched || password.dirty) || isSubmited">
+                <span *ngIf="password.errors?.required">Password is required</span>
+                <span *ngIf="password.errors?.minlength">Min 7 characters needed</span>
+            </div>
+        </div>
+        <button type="submit">Continue</button>
+        <div class="alert-danger" *ngIf="errorMessage" >{{ errorMessage }}</div>
+    </form>
+    <div class="register-option">
+        <div class="line"></div>
+        <p>OR</p>
+        <div class="line"></div>
+    </div>
+    <p>New user? <a routerLink="/register">Create an account</a></p>
+</div>
