@@ -9,7 +9,7 @@
                 <div class="form-group">
                     <label for="phoneNumber">Your phone number</label>
                     <input type="text" id="phoneNumber" name="phoneNumber" [(ngModel)]="contact.phoneNumber" 
-                    #phoneNumber="ngModel" #phoneInput minlength="12" maxlength="12" pattern="\d{12}" required>
+                    #phoneNumber="ngModel" minlength="12" maxlength="12" pattern="\d{12}" required>
                     <div *ngIf="phoneNumber.invalid && (phoneNumber.touched || phoneNumber.dirty) || isCheckoutFormSubmited">
                         <span *ngIf="phoneNumber.errors?.required">phone number is required</span>
                         <span *ngIf="(phoneNumber.errors?.minlength) || (phoneNumber.errors?.maxlength)">12 numbers are needed</span>

@@ -196,11 +196,9 @@ priceFilteringData(){
 //for search bar
 searchFilter(){
   if(this.searchKeyword == ''){
-    console.log("hola");
     this.searchResult = this.filtredProducts;
     this.priceFilteringData();
   }else{
-    console.log("hello hello");
     this.searchResult = this.filtredProducts.filter((item)=> item.name.includes(this.searchKeyword));
     this.priceFilteringData();
     console.log(this.searchResult);
